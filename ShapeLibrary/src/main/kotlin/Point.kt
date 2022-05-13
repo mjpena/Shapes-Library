@@ -1,6 +1,6 @@
 /**
- * @property x position of point object on x axis
- * @property y position of point object on y axis
+ * @property x position of point object on x-axis
+ * @property y position of point object on y-axis
  * @constructor creates Point object given x and y
  */
 class Point(x:Double, y:Double){
@@ -19,8 +19,8 @@ class Point(x:Double, y:Double){
 
     /**
      * Moves point according to deltaX and deltaY.
-     * @param deltaX Amount to move point on x axis.
-     * @param deltaY Amount to move point on y axis.
+     * @param deltaX Amount to move point on x-axis.
+     * @param deltaY Amount to move point on y-axis.
      */
     fun move(deltaX: Double, deltaY: Double){
         x += deltaX

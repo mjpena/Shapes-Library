@@ -1,5 +1,3 @@
-package Shape
-
 import Point
 
 /**

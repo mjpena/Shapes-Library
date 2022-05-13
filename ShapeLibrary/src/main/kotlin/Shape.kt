@@ -1,10 +1,11 @@
 import Point
 
 /**
- * @property points List of points that make up this object.
+ * Abstract Shape superclass
  */
 open abstract class Shape {
-    open val points: MutableList <Point> = mutableListOf<Point>()
+    var points: List <Point> = listOf()
+        protected set
 
     /**
      * Calculates the area of this shape.

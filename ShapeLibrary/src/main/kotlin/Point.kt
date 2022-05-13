@@ -4,8 +4,10 @@
  * @constructor creates Point object given x and y
  */
 class Point(x:Double, y:Double){
-    private var x:Double = x
-    private var y:Double = y
+    var x:Double = x
+        private set
+    var y:Double = y
+        private  set
 
     /**
      * Creates new point object with the same attributes of this object.

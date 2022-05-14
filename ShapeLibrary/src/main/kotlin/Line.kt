@@ -1,11 +1,9 @@
-import Point
-import Shape
 import kotlin.math.pow
 import kotlin.math.sqrt
 
 /**
  * @param point1 First point used to define line.
- * @param point1 Second point used to define line.
+ * @param point2 Second point used to define line.
  */
 class Line(point1: Point, point2: Point): Shape()
 {

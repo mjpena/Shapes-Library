@@ -1,4 +1,3 @@
-import Point
 
 /**
  * Abstract Shape superclass

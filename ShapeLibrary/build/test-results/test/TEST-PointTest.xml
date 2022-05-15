@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PointTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-05-15T03:25:46" hostname="DESKTOP-72N4KV9" time="0.012">
+  <properties/>
+  <testcase name="testClone()" classname="PointTest" time="0.001"/>
+  <testcase name="testZeroValue()" classname="PointTest" time="0.001"/>
+  <testcase name="testMoveZero()" classname="PointTest" time="0.002"/>
+  <testcase name="testNegativeValues()" classname="PointTest" time="0.001"/>
+  <testcase name="testPositiveValues()" classname="PointTest" time="0.001"/>
+  <testcase name="testMovePositive()" classname="PointTest" time="0.001"/>
+  <testcase name="testMoveNegative()" classname="PointTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

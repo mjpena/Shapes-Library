@@ -36,17 +36,25 @@ internal class LineTest
     }
 
     @Test
-    fun getLengthPositive(){
-        val point1: Point = Point(0.0, 0.0)
-        val point2: Point = Point(3.0, 4.0)
+    fun getLengthHorizontal(){
+        val point1: Point = Point(-1.0, 2.0)
+        val point2: Point = Point(5.0, 2.0)
         val line: Line = Line(point1, point2)
-        assertTrue(line.getLength() == 5.0)
+        assertTrue(line.getLength() == 6.0)
     }
 
     @Test
-    fun getLengthNegative(){
+    fun getLengthVertical(){
+        val point1: Point = Point(-1.0, -2.0)
+        val point2: Point = Point(-1.0, -9.0)
+        val line: Line = Line(point1, point2)
+        assertTrue(line.getLength() == 7.0)
+    }
+
+    @Test
+    fun getLengthDiagnol(){
         val point1: Point = Point(0.0, 0.0)
-        val point2: Point = Point(-3.0, -4.0)
+        val point2: Point = Point(3.0, 4.0)
         val line: Line = Line(point1, point2)
         assertTrue(line.getLength() == 5.0)
     }

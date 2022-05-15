@@ -47,8 +47,8 @@ internal class PointTest {
         val testY = 1.0
         val point: Point = Point(testX, testY)
         point.move(0.0, 0.0)
-        assertTrue(point.x == testX)
-        assertTrue(point.y == testY)
+        assertTrue(point.x == 1.0)
+        assertTrue(point.y == 1.0)
     }
 
     @Test

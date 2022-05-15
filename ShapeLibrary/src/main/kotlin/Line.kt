@@ -7,14 +7,15 @@ import kotlin.math.sqrt
  */
 class Line(point1: Point, point2: Point): Shape()
 {
+    // verify length is not 0
     init
     {
-        if (point1.x == point2.x && point1.y == point2.y)
+        points = listOf(point1, point2)
+
+        if (this.getLength() == 0.0)
         {
             throw Exception("Line cannot have length 0.")
         }
-
-        points = listOf(point1, point2)
     }
 
     override fun getArea(): Double

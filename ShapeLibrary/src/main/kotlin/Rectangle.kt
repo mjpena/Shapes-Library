@@ -2,14 +2,15 @@
  * @param point1: First point to define this rectangle.
  * @param point2: Second point to define this rectangle.
  */
-class Rectangle(point1: Point, point2: Point): Shape()
+open class Rectangle(point1: Point, point2: Point): Shape()
 {
     // verify area is greater than 0
+    // if area is 0, width and/or height is zero
     init
     {
         points = listOf(point1, point2)
         if (this.getArea() == 0.0){
-            throw Exception("Area cannot be 0.");
+            throw Exception("Width or height cannot be 0.");
         }
     }
 

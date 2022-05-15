@@ -1,6 +1,7 @@
 /**
  * @param point1: First point to define this rectangle.
  * @param point2: Second point to define this rectangle.
+ * @constructor Creates Rectangle given two points.
  */
 open class Rectangle(point1: Point, point2: Point): Shape(listOf(point1, point2))
 {

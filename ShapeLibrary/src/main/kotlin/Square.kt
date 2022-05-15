@@ -1,3 +1,6 @@
+/**
+ * @constructor Creates Square given a point and a width.
+ */
 class Square(point1: Point, width: Double): Rectangle(point1, point2 = Point(point1.x + width, point1.y + width))
 {
     init

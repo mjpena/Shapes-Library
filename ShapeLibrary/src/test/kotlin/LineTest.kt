@@ -52,7 +52,7 @@ internal class LineTest
     }
 
     @Test
-    fun getLengthDiagnol(){
+    fun getLengthDiagonal(){
         val point1: Point = Point(0.0, 0.0)
         val point2: Point = Point(3.0, 4.0)
         val line: Line = Line(point1, point2)

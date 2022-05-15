@@ -1,6 +1,8 @@
 
 /**
  * Abstract Shape superclass
+ * @property points List of points that define this shape.
+ * @constructor Accepts list of points.
  */
 open abstract class Shape(points: List<Point>) {
     var points: List <Point> = points

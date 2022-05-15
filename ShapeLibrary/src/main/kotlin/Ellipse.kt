@@ -1,3 +1,6 @@
+/**
+ * @constructor Creates Ellipse given a point and two radii.
+ */
 open class Ellipse(point: Point, radius1: Double, radius2: Double): Shape(listOf(point)) {
     var radius1: Double = radius1
         private set

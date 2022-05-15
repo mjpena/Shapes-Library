@@ -4,6 +4,7 @@ import kotlin.math.sqrt
 /**
  * @param point1 First point used to define line.
  * @param point2 Second point used to define line.
+ * @constructor Creates line given two points.
  */
 class Line(point1: Point, point2: Point): Shape(listOf(point1, point2))
 {

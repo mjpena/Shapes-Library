@@ -2,9 +2,9 @@
 /**
  * Abstract Shape superclass
  */
-open abstract class Shape {
-    var points: List <Point> = listOf()
-        protected set
+open abstract class Shape(points: List<Point>) {
+    var points: List <Point> = points
+        private set
 
     /**
      * Calculates the area of this shape.

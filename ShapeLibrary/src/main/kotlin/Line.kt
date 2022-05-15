@@ -5,13 +5,11 @@ import kotlin.math.sqrt
  * @param point1 First point used to define line.
  * @param point2 Second point used to define line.
  */
-class Line(point1: Point, point2: Point): Shape()
+class Line(point1: Point, point2: Point): Shape(listOf(point1, point2))
 {
     // verify length is not 0
     init
     {
-        points = listOf(point1, point2)
-
         if (this.getLength() == 0.0)
         {
             throw Exception("Line cannot have length 0.")

@@ -6,6 +6,7 @@
 class Point(x:Double, y:Double){
     var x:Double = x
         private set
+
     var y:Double = y
         private  set
 

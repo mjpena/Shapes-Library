@@ -15,6 +15,11 @@ open class Ellipse(point: Point, radius1: Double, radius2: Double): Shape(listOf
             throw Exception("Radii cannot be less than 0")
         }
 
+        if (radius1.isNaN() || radius2.isNaN())
+        {
+            throw Exception("Radii cannot be NaN")
+        }
+
         if (this.getArea() == 0.0)
         {
             throw Exception("Area cannot be 0")

@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.assertThrows
 
 internal class PointTest {
 
@@ -11,6 +12,29 @@ internal class PointTest {
         val point: Point = Point(testX, testY)
         assertTrue(point.x == testX)
         assertTrue(point.y == testY)
+    }
+
+    @Test
+    fun testNaNValue() {
+        val testX = Double.NaN
+        val testY = Double.NaN
+        assertThrows<Exception> {
+            val point: Point = Point(testX, testY)
+        }
+    }
+
+    @Test
+    fun testPositiveInfinity() {
+        val testX = Double.POSITIVE_INFINITY
+        val testY = Double.POSITIVE_INFINITY
+        val point: Point = Point(testX, testY)
+    }
+
+    @Test
+    fun testNegativeInfinity() {
+        val testX = Double.NEGATIVE_INFINITY
+        val testY = Double.NEGATIVE_INFINITY
+        val point: Point = Point(testX, testY)
     }
 
     @Test

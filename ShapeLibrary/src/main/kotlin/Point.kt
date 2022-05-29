@@ -7,7 +7,13 @@ class Point(x:Double, y:Double): Movable{
     var x:Double = x
         private set
     var y:Double = y
-        private  set
+        private set
+
+    init {
+        if (x.isNaN() || y.isNaN()){
+            throw Exception("Point x or y attribute cannot be equal to NaN")
+        }
+    }
 
     /**
      * Creates new point object with the same attributes of this object.

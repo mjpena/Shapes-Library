@@ -54,6 +54,27 @@ internal class EllipseTest {
     }
 
     @Test
+    fun testPositiveInfinity()
+    {
+        val point: Point = Point(0.0, 0.0)
+        val radius1: Double = Double.POSITIVE_INFINITY
+        val radius2: Double = Double.POSITIVE_INFINITY
+        val ellipse: Ellipse = Ellipse(point, radius1, radius2)
+    }
+
+    @Test
+    fun testNan()
+    {
+        val point: Point = Point(0.0, 0.0)
+        val radius1: Double = Double.NaN
+        val radius2: Double = Double.NaN
+        assertThrows<Exception>
+        {
+            val ellipse: Ellipse = Ellipse(point, radius1, radius2)
+        }
+    }
+
+    @Test
     fun testGetAttributes()
     {
         val point: Point = Point(0.0, 0.0)
